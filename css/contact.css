@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@400;500;900&family=Roboto&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+nav ul img {
+  width: 45px;
+  height: 40px;
+  margin-top: 7px;
+  object-fit: contain;
+}
+
+.nav-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+  width: 100px;
+}
+
+.nav-contact a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 5px;
+  border-style: none;
+}
+.nav-contact a:hover {
+  background-color: orangered;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* hamburger */
+#barsmenu {
+  display: none;
+}
+.hamburger-menu {
+  background-color: gray;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: none;
+}
+.hamburger-menu ul {
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+}
+.hamburger-menu ul li {
+  padding: 15px;
+}
+.hamburger-menu ul li a {
+  color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.hamburger-menu ul li a:hover {
+  background-color: orangered;
+  color: white;
+}
+.hamburger-menu ul li .active-page {
+  background-color: #fd4e2f;
+  color: white;
+}
+
+/* Awal dari Form */
+
+h2 {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  width: 350px;
+  margin: 50px auto;
+  padding: 10px;
+}
+form div {
+  margin-top: 15px;
+}
+label {
+  font-weight: 400;
+}
+
+input,
+select,
+textarea {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid#dbdbdb;
+}
+
+button {
+  cursor: pointer;
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+  .form {
+    width: 80%;
+  }
+  #barsmenu {
+    display: flex;
+  }
+  .hide-item {
+    display: none;
+  }
+}

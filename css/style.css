@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@400;500;900&family=Roboto&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #b89393;
+}
+/* navbar start */
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .logo {
+  width: 45px;
+}
+
+nav .logo:hover {
+  background-color: lightsalmon;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+nav ul li .home {
+  color: black;
+  font-weight: bold;
+}
+
+nav ul li .home:hover {
+  color: orangered;
+}
+
+nav ul li .blog {
+  color: orangered;
+  font-family: sans-serif;
+  font-size: large;
+}
+nav ul li .blog:hover {
+  color: orange;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+.nav-right a {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.nav-right a:hover {
+  background-color: orangered;
+  border-radius: 4px;
+}
+
+/* navbar end */
+
+/* Awal dari Hamburger */
+#barsmenu {
+  display: none;
+}
+
+.hamburger-menu {
+  background-color: white;
+  border: 1px solid #888;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}
+.hamburger-menu ul {
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+.hamburger-menu ul li {
+  padding: 15px;
+}
+.hamburger-menu ul li a {
+  color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.hamburger-menu ul li a:hover {
+  background-color: orangered;
+  color: white;
+}
+.hamburger-menu ul li .active-page {
+  background-color: orangered;
+  color: white;
+}
+
+/* bagian card */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 60%;
+  padding: 5em;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  background-color: white;
+  display: flex;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin-bottom: 2px;
+}
+
+.card-container p {
+  font-family: sans-serif;
+  font-size: large;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.card-container .contact {
+  border-style: solid;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+}
+
+/* bagian group */
+
+.group {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.group h4 {
+  font-size: 12px;
+  margin-bottom: 200px;
+}
+
+.group img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 180px;
+}
+
+.group img:hover {
+  background-color: orangered;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+/* Akhir dari group */
+
+/* Awal dari Social Media */
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media .image img {
+  width: 30px;
+  height: 35px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.social-media .image img:hover {
+  background-color: orangered;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+/* Bagian Akhir social media */
+.profile {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 42px;
+  border-radius: 10px;
+}
+
+.profile .card-profile {
+  width: 100%;
+  height: 56%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #888;
+}
+
+.card-profile:hover {
+  transform: scale(1.1);
+}
+.profile .card-profile img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile .card-profile h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.profile .card-profile p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* Awal dari Media Queries */
+
+@media screen and (max-width: 500px) {
+  .hide-item {
+    display: none;
+  }
+
+  #barsmenu {
+    display: flex;
+  }
+
+  .card {
+    padding: 30px;
+  }
+  .card .card-container {
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px #d5d5d5;
+  }
+  .card .card-container .contact {
+    width: 92%;
+    padding: 10px;
+  }
+  .card-container h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card .card-container {
+    align-items: center;
+  }
+  .card .card-container .contact {
+    flex: 60%;
+  }
+  .card .card-container {
+    flex: 40%;
+  }
+}

@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@400;500;900&family=Roboto&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+nav ul img {
+  width: 45px;
+  height: 40px;
+  margin-top: 7px;
+  object-fit: contain;
+}
+
+.nav-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+  width: 100px;
+}
+
+.nav-contact a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 5px;
+  border-style: none;
+}
+.nav-contact a:hover {
+  background-color: orangered;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Hamburger */
+#barsmenu {
+  display: none;
+}
+
+.hamburger-menu {
+  background-color: white;
+  border: 1px solid #888;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}
+.hamburger-menu ul {
+  list-style: none;
+  text-align: center;
+  font-weight: bold;
+}
+.hamburger-menu ul li {
+  padding: 15px;
+}
+.hamburger-menu ul li a {
+  color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.hamburger-menu ul li a:hover {
+  background-color: orangered;
+  color: white;
+}
+.hamburger-menu ul li .active-page {
+  background-color: orangered;
+  color: white;
+}
+
+/* awal dari blog */
+section.blog-form {
+  display: flex;
+  background-color: aquamarine;
+}
+
+.blog-content {
+  background-color: lightgrey;
+}
+section.blog-form .blog-form-container {
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+section.blog-form h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+section.blog-form label {
+  font-weight: 600;
+}
+
+section.blog-form #input-title-blog,
+#input-description-blog,
+#input-upload-blog {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+section.blog-form .input-date-div {
+  display: flex;
+  box-sizing: border-box;
+  gap: 1em;
+  margin-bottom: 10px;
+}
+
+section.blog-form #input-startdate-blog {
+  width: 98%;
+}
+
+section.blog-form #input-enddate-blog {
+  width: 98%;
+}
+section.blog-form .input-technologies-div {
+  margin-bottom: 15px;
+}
+section.blog-form .input-technologies-div h4 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+section.blog-form .input-technologies-div .input-technology-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.blog-form .input-technologies-div .input-technology-div label {
+  margin-right: 20px;
+}
+
+section.blog-form .input-upload-div {
+  background-color: lightgrey;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+section.blog-form .input-upload-div input#file-upload-button {
+  background-color: #fd4e2f;
+}
+
+.btn button {
+  background-color: #fd4e2f;
+  color: whitesmoke;
+  float: right;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  background-color: whitesmoke;
+  color: #fd4e2f;
+}
+
+section.blog-content h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.blog-content .blog-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+section.blog-content .blog-content-container .blog-content-card {
+  margin: 20px 10px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 20px #d5d5d5;
+  height: 65vh;
+  width: 30%;
+  align-items: center;
+}
+
+section.blog-content .blog-content-container .blog-content-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+section.blog-content .blog-content-container .blog-content-card h2 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.blog-content-card h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.card-text span {
+  color: red;
+}
+
+.card-text p {
+  font-size: 12px;
+  margin-top: 6px;
+  text-align: justify;
+}
+
+.card-techstack {
+  margin-bottom: 20px;
+}
+
+.card-techstack i {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+.card-techstack i:hover {
+  background-color: orangered;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.card-button {
+  display: flex;
+  gap: 0.5em;
+}
+
+.card-button button {
+  background-color: red;
+  border: none;
+  margin-right: 20px;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-button button:hover {
+  background-color: white;
+  color: #fd4e2f;
+}
+
+/* Awal dari blog detail */
+.blog-post {
+  padding: 10px 300px;
+}
+
+.blog-post h1.title {
+  text-align: center;
+}
+
+.blog-post .banner {
+  display: flex;
+  /* background-color: #fd4e2f; */
+}
+
+.blog-post .banner img {
+  width: 90%;
+  margin-right: 70px;
+}
+
+.banner .banner-text {
+  align-items: start;
+}
+
+.banner-text p {
+  font-size: 1.2em;
+}
+
+.banner-text td {
+  font-size: 1.2em;
+  padding: 0 25px 25px 0;
+}
+
+.blog-post-content p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+  .hide-item {
+    display: none;
+  }
+  #barsmenu {
+    display: flex;
+  }
+  .blog-post {
+    padding: 10px;
+  }
+
+  .blog-post .banner {
+    display: grid;
+  }
+
+  .blog-post .banner img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section.blog-content .blog-content-container .blog-content-card {
+    width: 100%;
+  }
+}
+
+/* Media Queries */

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/blog.css" />
+    <title>my blog</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <img src="img/logo.png" alt="logo-navbar" />
+        </li>
+        <li class="hide-item"><a href="index.html">Home</a></li>
+        <li class="hide-item"><a href="blog.html">My Project</a></li>
+        <li class="hide-item"><a href="testimony.html">My Testimony</a></li>
+      </ul>
+      <div class="nav-contact hide-item">
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <!-- Hamburger Menu -->
+      <div class="right-side" id="barsmenu">
+        <button style="background-color: transparent; color: #fd4e2f; cursor: pointer; border: none" onclick="openHamburger()"><i class="fa-solid fa-bars" style="font-size: 2em; margin-right: 10px"></i></button>
+      </div>
+    </nav>
+    <div class="hamburger-menu" id="hamburger-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active-page" href="blog.html">My Project</a></li>
+        <li><a href="testimony.html">My Testimony</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+    <!-- akhir dari navbar -->
+
+    <!-- awal dari blog -->
+    <main>
+      <!-- Blog Form -->
+      <section class="blog-form">
+        <div class="blog-form-container">
+          <h1>ADD MY PROJECT</h1>
+          <div class="blog-form-input">
+            <form id="form-blog">
+              <div class="input-title-div">
+                <label for="input-title-blog">Title</label>
+                <input type="text" id="input-title-blog" />
+              </div>
+              <div class="input-date-div">
+                <div class="input-startdate-div">
+                  <label for="input-startdate-blog">Start Date</label>
+                  <input type="date" id="input-startdate-blog" />
+                </div>
+                <div class="input-enddate-div">
+                  <label for="input-enddate-blog">End Date</label>
+                  <input type="date" id="input-enddate-blog" />
+                </div>
+              </div>
+              <div class="input-description-div">
+                <label for="input-description-blog">Description</label>
+                <textarea name="input-description-blog" id="input-description-blog" cols="30" rows="10"></textarea>
+              </div>
+              <div class="input-technologies-div">
+                <h4>Technologies</h4>
+                <div class="input-technology-div">
+                  <input type="checkbox" id="input-nodejs-blog" />
+                  <label for="input-nodejs-blog">NodeJS</label>
+                  <input type="checkbox" id="input-nextjs-blog" />
+                  <label for="input-nextjs-blog">NextJS</label>
+                  <input type="checkbox" id="input-reactjs-blog" />
+                  <label for="input-reactjs-blog">ReactJS</label>
+                  <input type="checkbox" id="input-typescript-blog" />
+                  <label for="input-typescript-blog">TypeScript</label>
+                </div>
+              </div>
+              <div class="input-upload-div">
+                <label for="input-upload-blog">Upload Image</label>
+                <input type="file" id="input-upload-blog" />
+              </div>
+              <div class="btn">
+                <button class="submit-btn" onclick="addBlog(event)">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Content -->
+      <section class="blog-content">
+        <h1>My Project</h1>
+        <div id="blog-content" class="blog-content-container">
+          <div class="blog-content-card">
+            <div class="card-img">
+              <img src="img/foto2 .jpg" alt="foto2" />
+            </div>
+            <div class="card-text">
+              <h2><a href="blog-detail.html">Aplikasi Android - 2023</a></h2>
+              <span>durasi: 3 bulan</span>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est.</p>
+            </div>
+            <div class="card-techstack">
+              <i class="fa-brands fa-google-play"></i>
+              <i class="fa-brands fa-android"></i>
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="card-button">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+          <div class="blog-content-card">
+            <div class="card-img">
+              <img src="img/foto1.jpg" alt="foto1" />
+            </div>
+            <div class="card-text">
+              <h2><a href="blog-detail.html">Aplikasi Web - 2023</a></h2>
+              <span>durasi: 3 bulan</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, impedit reiciendis! Obcaecati iusto quisquam provident.</p>
+            </div>
+            <div class="card-techstack">
+              <i class="fa-brands fa-google-play"></i>
+              <i class="fa-brands fa-android"></i>
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="card-button">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+          <div class="blog-content-card">
+            <div class="card-img">
+              <img src="img/foto4.jpg" alt="foto4" />
+            </div>
+            <div class="card-text">
+              <h2><a href="blog-detail.html">Aplikasi Android APP - 2023</a></h2>
+              <span>durasi: 3 bulan</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quibusdam optio quaerat cupiditate illo dicta?</p>
+            </div>
+            <div class="card-techstack">
+              <i class="fa-brands fa-google-play"></i>
+              <i class="fa-brands fa-android"></i>
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="card-button">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+          <div class="blog-content-card">
+            <div class="card-img">
+              <img src="img/foto1.jpg" alt="foto1" />
+            </div>
+            <div class="card-text">
+              <h2><a href="blog-detail.html">Aplikasi Web - 2023</a></h2>
+              <span>durasi: 3 bulan</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius hic minima at adipisci blanditiis. Perferendis?</p>
+            </div>
+            <div class="card-techstack">
+              <i class="fa-brands fa-google-play"></i>
+              <i class="fa-brands fa-android"></i>
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="card-button">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
+  </body>
+  <br /><br /><br /><br
+</html>
